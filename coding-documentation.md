@@ -13,7 +13,7 @@ This document explains the best practices when writing code for any project in C
 Only return a 200 response when a url is called by GET method, if the request method is anything other than GET (POST, PUT, etc.) the response should be redirect to a GET url. the only exception is when the request is ajax or require Json response.
 
 Right:
-```php
+```
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
@@ -25,7 +25,7 @@ if (Request::isMethod('POST'))
 ```
 
 Wrong:
-```php
+```
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
@@ -43,7 +43,7 @@ You can show messages\alerts to users in 2 different ways:
 
 1.Use session flash for simple messages like a successful message:
 
-```php
+```
 Session::flash('success', trans('messages.form.valid.success'));
 
 Session::flash('error', trans('message.form.invalid.error'));
@@ -52,7 +52,7 @@ As an standard use 'success' and 'error' keys for the messages.
 
 2.Return errors with the response:
 
-```php
+```
 if ($validation->fails())
 {
 	return Redirect::to('url')->withErrors($validation->errors);
@@ -62,7 +62,7 @@ if ($validation->fails())
 Use the above method only if you're using the laravel's form helper.
 
 Please note that **Never** return the alerts using the view data:
-```php
+```
 return View::make('some.view')->with('message', trans('some.message'));
 ```
 [Back](#tickets-workflow-in-cit-projects)
@@ -73,12 +73,12 @@ return View::make('some.view')->with('message', trans('some.message'));
 
 Right:
 
-```php
+```
 Session::flash('success', trans('message.some'));
 ```
 
 Wrong:
-```php
+```
 Session::flash('success', 'Some message for the user!');
 ```
 
@@ -87,7 +87,7 @@ Session::flash('success', 'Some message for the user!');
 ##**3. Redirect::back is evil!**
 Use Redirect back only if you're sure the HTTP_REFERRER header is valid!
 
-```php
+```
 if (URL::previous())
 {
 	return Redirect::back()
