@@ -1,3 +1,6 @@
+---
+title: Tickets Workflow Documentation
+---
 #**Tickets workflow in CIT projects**
 
 This document explains the "ticket life cycle" and discusses how a developer should choose a ticket, how to work on it, and also when and why any fields of the ticket should be changed.
