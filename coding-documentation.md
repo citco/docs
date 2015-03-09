@@ -1,5 +1,6 @@
 ---
 title: CIT Coding Documentation
+layout: page
 ---
 #**CIT Coding Documentation**
 
@@ -16,9 +17,9 @@ Right:
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
-	
+
 	Session::flash('some message');
-	
+
 	return Redirect::to('the/get/url');
 }
 ```
@@ -28,7 +29,7 @@ Wrong:
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
-	
+
 	return View::make('some.view');
 }
 ```

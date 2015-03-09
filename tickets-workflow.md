@@ -1,43 +1,44 @@
 ---
 title: Tickets Workflow Documentation
+layout: page
 ---
 #**Tickets workflow in CIT projects**
 
 This document explains the "ticket life cycle" and discusses how a developer should choose a ticket, how to work on it, and also when and why any fields of the ticket should be changed.
 
 ###Table of Contents
-[1. When and how should I raise a new ticket?](#1-when-and-how-should-i-raise-a-new-ticket)  
-[3. What does ticket pool mean?](#3-what-does-ticket-pool-mean)  
-[4. There are some tickets assigned to me, does it matter which one I choose to work on?](#4-there-are-some-tickets-assigned-to-me-does-it-matter-which-one-i-choose-to-work-on)  
-[5. What should I do when there is something urgent?](#5-what-should-i-do-when-there-is-something-urgent)  
-[6. What should I do when I start working on a ticket?](#6-what-should-i-do-when-i-start-working-on-a-ticket)  
-[7. I think I’ve completed writing the code for a ticket, now I’m testing it on my local development environment. Should I do anything at this point?](#7-i-think-ive-completed-writing-the-code-for-a-ticket-now-im-testing-it-on-my-local-development-environment-should-i-do-anything-at-this-point)  
-[8. OK, testing is completed. What is the next?](#8-ok-testing-is-completed-what-is-the-next)  
-[9. When should I change the ticket “Status” to “Needs Approval”?](#9-when-should-i-change-the-ticket-status-to-needs-approval)  
-[10. When can I change the ticket “Status” to “On Hold”?](#10-when-can-i-change-the-ticket-status-to-on-hold)  
-[11. For some reason it’s not possible to work on a ticket and it should be held for a long time. What should I do in this situation?](#11-for-some-reason-its-not-possible-to-work-on-a-ticket-and-it-should-be-held-for-a-long-time-what-should-i-do-in-this-situation)  
-[12. What should i do when something is not going to be fixed?](#12-what-should-i-do-when-something-is-not-going-to-be-fixed)  
-[13. The source code has been changed and it’s ready to be deployed but for a reason I can’t update the server. What should I do in this situation?](#13-the-source-code-has-been-changed-and-its-ready-to-be-deployed-but-for-a-reason-i-cant-update-the-server-what-should-i-do-in-this-situation)  
-[14. Is there any way which I can set my upcoming ticket?](#14-is-there-any-way-which-i-can-set-my-upcoming-ticket)  
-[15. A “Deployed Live” ticket has been assigned to me. What should I do?](#15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do)  
-[16. When should I change the ticket “Status” to “Needs work”?](#16-when-should-i-change-the-ticket-status-to-needs-work)  
-[17. A ticket with “Status” of “Needs Approval” has been assigned to me. What should I do?](#17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do)  
+[1. When and how should I raise a new ticket?](#1-when-and-how-should-i-raise-a-new-ticket)
+[3. What does ticket pool mean?](#3-what-does-ticket-pool-mean)
+[4. There are some tickets assigned to me, does it matter which one I choose to work on?](#4-there-are-some-tickets-assigned-to-me-does-it-matter-which-one-i-choose-to-work-on)
+[5. What should I do when there is something urgent?](#5-what-should-i-do-when-there-is-something-urgent)
+[6. What should I do when I start working on a ticket?](#6-what-should-i-do-when-i-start-working-on-a-ticket)
+[7. I think I’ve completed writing the code for a ticket, now I’m testing it on my local development environment. Should I do anything at this point?](#7-i-think-ive-completed-writing-the-code-for-a-ticket-now-im-testing-it-on-my-local-development-environment-should-i-do-anything-at-this-point)
+[8. OK, testing is completed. What is the next?](#8-ok-testing-is-completed-what-is-the-next)
+[9. When should I change the ticket “Status” to “Needs Approval”?](#9-when-should-i-change-the-ticket-status-to-needs-approval)
+[10. When can I change the ticket “Status” to “On Hold”?](#10-when-can-i-change-the-ticket-status-to-on-hold)
+[11. For some reason it’s not possible to work on a ticket and it should be held for a long time. What should I do in this situation?](#11-for-some-reason-its-not-possible-to-work-on-a-ticket-and-it-should-be-held-for-a-long-time-what-should-i-do-in-this-situation)
+[12. What should i do when something is not going to be fixed?](#12-what-should-i-do-when-something-is-not-going-to-be-fixed)
+[13. The source code has been changed and it’s ready to be deployed but for a reason I can’t update the server. What should I do in this situation?](#13-the-source-code-has-been-changed-and-its-ready-to-be-deployed-but-for-a-reason-i-cant-update-the-server-what-should-i-do-in-this-situation)
+[14. Is there any way which I can set my upcoming ticket?](#14-is-there-any-way-which-i-can-set-my-upcoming-ticket)
+[15. A “Deployed Live” ticket has been assigned to me. What should I do?](#15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do)
+[16. When should I change the ticket “Status” to “Needs work”?](#16-when-should-i-change-the-ticket-status-to-needs-work)
+[17. A ticket with “Status” of “Needs Approval” has been assigned to me. What should I do?](#17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do)
 
 ##**1. When and how should I raise a new ticket?**
 
 For any request such as adding a **new feature** to a website, **debugging** an issue or even a simple **task** - improving this document - you need to raise a ticket with the following fields set:
 
-- **Summary**: The ticket subject should be clear enough to be understood by other developers but it should not be too long.  
-- **Description**: Any scenario that can explain the ticket with additional information needs to be added into the description field.  
-- **Priority**: A ticket priority should be set to "Normal" unless there was a good reason to choose any other priority. So if you are not sure about the priority it would be better to set it to normal.  
-- **Component**: The related product needs to be selected here.  
-- **Type**: When you want to add a new feature or fix a bug on a website, it should be set to either "Feature" or "Bug". When there is a situation that you need to support other people e.g. answering some technical questions, it should be set to "Support". When it's not any of above situations e.g. a ticket to improve this document, it should be set to "Task".  
-- **Association**: If the ticket is related to any other tickets they should be linked to each other by using "Association" field.  
-- **Status**: The ticket "Status" will be set to "New" by default so you don't need to change it.  
-- **Assign To**: Always set it to "None" but if there is a situation where you need something from any other members, you should assign it to that particular member.  
-- **Version**: None  
-- **Responsible**: None  
-- **Milestone**: None  
+- **Summary**: The ticket subject should be clear enough to be understood by other developers but it should not be too long.
+- **Description**: Any scenario that can explain the ticket with additional information needs to be added into the description field.
+- **Priority**: A ticket priority should be set to "Normal" unless there was a good reason to choose any other priority. So if you are not sure about the priority it would be better to set it to normal.
+- **Component**: The related product needs to be selected here.
+- **Type**: When you want to add a new feature or fix a bug on a website, it should be set to either "Feature" or "Bug". When there is a situation that you need to support other people e.g. answering some technical questions, it should be set to "Support". When it's not any of above situations e.g. a ticket to improve this document, it should be set to "Task".
+- **Association**: If the ticket is related to any other tickets they should be linked to each other by using "Association" field.
+- **Status**: The ticket "Status" will be set to "New" by default so you don't need to change it.
+- **Assign To**: Always set it to "None" but if there is a situation where you need something from any other members, you should assign it to that particular member.
+- **Version**: None
+- **Responsible**: None
+- **Milestone**: None
 
 *If the issue or request is related to a ticket which is already closed you should use **Association** field to make a reference to the closed ticket.*
 
