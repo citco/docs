@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
-url:         "http://pixyll.com"
+title: CIT Documentations
+email: info@creativeinvestments.co.uk
+author: Amir Montazer
+description: "CIT Documentations"
+baseurl: "/citdocs"
+url: "http://citco.github.io/citdocs"
 
 # Google analytics
 google_analytics:
@@ -30,10 +30,6 @@ paypal_url:
 flattr_button:
 
 # Build settings
-markdown:     redcarpet
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
-paginate:     3
-sass:
-  compressed: true
+markdown: kramdown
+permalink: pretty
+paginate: 3
