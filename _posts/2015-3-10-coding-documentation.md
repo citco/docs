@@ -14,6 +14,7 @@ Right:
 
 {% highlight php %}
 <?php
+
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
@@ -28,6 +29,7 @@ Wrong:
 
 {% highlight php %}
 <?php
+
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
@@ -43,6 +45,8 @@ You can show messages\alerts to users in 2 different ways:
 1.Use session flash for simple messages like a successful message:
 
 {% highlight php %}
+<?php
+
 Session::flash('success', trans('messages.form.valid.success'));
 
 Session::flash('error', trans('message.form.invalid.error'));
@@ -53,6 +57,8 @@ As an standard use 'success' and 'error' keys for the messages.
 2.Return errors with the response:
 
 {% highlight php %}
+<?php
+
 if ($validation->fails())
 {
 	return Redirect::to('url')->withErrors($validation->errors);
@@ -64,6 +70,8 @@ Use the above method only if you're using the laravel's form helper.
 Please note that **Never** return the alerts using the view data:
 
 {% highlight php %}
+<?php
+
 return View::make('some.view')->with('message', trans('some.message'));
 {% endhighlight %}
 
@@ -74,12 +82,16 @@ return View::make('some.view')->with('message', trans('some.message'));
 Right:
 
 {% highlight php %}
+<?php
+
 Session::flash('success', trans('message.some'));
 {% endhighlight %}
 
 Wrong:
 
 {% highlight php %}
+<?php
+
 Session::flash('success', 'Some message for the user!');
 {% endhighlight %}
 
@@ -88,6 +100,8 @@ Session::flash('success', 'Some message for the user!');
 Use Redirect back only if you're sure the HTTP_REFERRER header is valid!
 
 {% highlight php %}
+<?php
+
 if (URL::previous())
 {
 	return Redirect::back()
