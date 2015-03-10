@@ -21,7 +21,7 @@ if (Request::isMethod('POST'))
 
 	return Redirect::to('the/get/url');
 }
-{% highlight %}
+{% endhighlight %}
 
 Wrong:
 
