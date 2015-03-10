@@ -13,7 +13,8 @@ This document explains the best practices when writing code for any project in C
 Only return a 200 response when a url is called by GET method, if the request method is anything other than GET (POST, PUT, etc.) the response should be redirect to a GET url. the only exception is when the request is ajax or require Json response.
 
 Right:
-```
+
+```php
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
