@@ -12,7 +12,7 @@ Only return a 200 response when a url is called by GET method, if the request me
 
 Right:
 
-```php
+{% highlight php %}
 if (Request::isMethod('POST'))
 {
 	//data validation, manipulation, etc.
@@ -21,7 +21,7 @@ if (Request::isMethod('POST'))
 
 	return Redirect::to('the/get/url');
 }
-```
+{% highlight %}
 
 Wrong:
 
