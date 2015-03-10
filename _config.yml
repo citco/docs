@@ -36,3 +36,4 @@ paginate: 3
 
 kramdown:
   enable_coderay: true
+  input: GFM
