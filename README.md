@@ -5,3 +5,5 @@ To add new files please first add the file with the jekyll prefered naming (year
 check everything with the supervisor and then merge it to the gh-pages branch to get it deployed.
 
 **Never** merge the gh-pages branch into the master, we want the master to be clean.
+
+Here is the blog: http://citco.github.io/citdocs/
