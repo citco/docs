@@ -24,9 +24,9 @@ This document explains the "ticket life cycle" and discusses how a developer sho
 [15. A “Deployed Live” ticket has been assigned to me. What should I do?](#15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do)  
 [16. When should I change the ticket “Status” to “Needs work”?](#16-when-should-i-change-the-ticket-status-to-needs-work)  
 [17. A ticket with “Status” of “Needs Approval” has been assigned to me. What should I do?](#17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do)  
-[Ticket Workflow Diagram](ticket-workflow-diagram)
+[Ticket Workflow Diagram](#ticket-workflow-diagram)
 
-##<a name='1-when-and-how-should-i-raise-a-new-ticket'></a>1. When and how should I raise a new ticket?
+## <a name='1-when-and-how-should-i-raise-a-new-ticket'></a>1. When and how should I raise a new ticket?
 
 For any request such as adding a **new feature** to a website, **debugging** an issue or even a simple **task** - improving this document - you need to raise a ticket with the following fields set:
 
