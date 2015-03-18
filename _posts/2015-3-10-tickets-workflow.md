@@ -2,11 +2,11 @@
 title: Tickets Workflow Documentation
 layout: page
 ---
-#**Tickets workflow in CIT projects**
+# <a name='tickets-workflow-in-cit-projects'></a>Tickets workflow in CIT projects
 
 This document explains the "ticket life cycle" and discusses how a developer should choose a ticket, how to work on it, and also when and why any fields of the ticket should be changed.
 
-###Table of Contents
+### Table of Contents
 [1. When and how should I raise a new ticket?](#1-when-and-how-should-i-raise-a-new-ticket)  
 [2. There is no ticket assigned to me. What should I do?](#2-there-is-no-ticket-assigned-to-me-what-should-i-do)  
 [3. What does ticket pool mean?](#3-what-does-ticket-pool-mean)  
@@ -24,9 +24,9 @@ This document explains the "ticket life cycle" and discusses how a developer sho
 [15. A “Deployed Live” ticket has been assigned to me. What should I do?](#15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do)  
 [16. When should I change the ticket “Status” to “Needs work”?](#16-when-should-i-change-the-ticket-status-to-needs-work)  
 [17. A ticket with “Status” of “Needs Approval” has been assigned to me. What should I do?](#17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do)  
-[Ticket Workflow Diagram](ticket-workflow-diagram)
+[Ticket Workflow Diagram](#ticket-workflow-diagram)
 
-##<a name='1-when-and-how-should-i-raise-a-new-ticket'></a>**1. When and how should I raise a new ticket?**
+## <a name='1-when-and-how-should-i-raise-a-new-ticket'></a>1. When and how should I raise a new ticket?
 
 For any request such as adding a **new feature** to a website, **debugging** an issue or even a simple **task** - improving this document - you need to raise a ticket with the following fields set:
 
@@ -46,19 +46,19 @@ For any request such as adding a **new feature** to a website, **debugging** an 
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='2-there-is-no-ticket-assigned-to-me-what-should-i-do'></a>**2. There is no ticket assigned to me. What should I do?**
+## <a name='2-there-is-no-ticket-assigned-to-me-what-should-i-do'></a>2. There is no ticket assigned to me. What should I do?
 
 When there is not a ticket left on your task list, you need to move some tickets from the ticket pool to your task list by changing ticket **"Assignee" to your user id**. To proceed, please talk to your supervisor and change the ticket **"Status" to "Planned"** once you have the necessary information to start working on it.
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='3-what-does-ticket-pool-mean'></a>**3. What does ticket pool mean?**
+## <a name='3-what-does-ticket-pool-mean'></a>3. What does ticket pool mean?
 
 For any new request we should raise a ticket. We keep all these new tickets in ticket pool till someone starts to work on them. Tickets in the ticket pool should have "Status" of "New" or "Postponed" and "Assignee" of "None".
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='4-there-are-some-tickets-assigned-to-me-does-it-matter-which-one-i-choose-to-work-on'></a>**4. There are some tickets assigned to me, does it matter which one I choose to work on?**
+## <a name='4-there-are-some-tickets-assigned-to-me-does-it-matter-which-one-i-choose-to-work-on'></a>4. There are some tickets assigned to me, does it matter which one I choose to work on?
 
 Tickets have other fields besides their numbers which we use to affect the order needed for tickets to be resolved. When the ticket timeline is completed and there is nothing more you can do with them, (i.e. All current tickets are marked as "Done", "Resolved", "On hold", etc) you should choose a new ticket from those assigned to you. To do so, you are advised to take following steps:
 
@@ -75,7 +75,7 @@ Tickets have other fields besides their numbers which we use to affect the order
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='5-what-should-i-do-when-there-is-something-urgent'></a>**5. What should I do when there is something urgent?**
+## <a name='5-what-should-i-do-when-there-is-something-urgent'></a>5. What should I do when there is something urgent?
 
 If you want to report something urgent, raise a ticket for the problem and set the **"Status" to "Urgent"**. Please note, these tickets must always be **assigned to someone**, so if for some reasons you are not going to take action about the problem, discuss the situation with team members so it gets clear who is going to solve the problem.
 
@@ -83,7 +83,7 @@ If you want to report something urgent, raise a ticket for the problem and set t
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='6-what-should-i-do-when-i-start-working-on-a-ticket'></a>**6. What should I do when I start working on a ticket?**
+## <a name='6-what-should-i-do-when-i-start-working-on-a-ticket'></a>6. What should I do when I start working on a ticket?
 
 When you're going to start working on a ticket, you should change the ticket **"Status" to "Working"**.
 
@@ -91,7 +91,7 @@ When you're going to start working on a ticket, you should change the ticket **"
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='7-i-think-ive-completed-writing-the-code-for-a-ticket-now-im-testing-it-on-my-local-development-environment-should-i-do-anything-at-this-point'></a>**7. I think I've completed writing the code for a ticket, now I'm testing it on my local development environment. Should I do anything at this point?**
+## <a name='7-i-think-ive-completed-writing-the-code-for-a-ticket-now-im-testing-it-on-my-local-development-environment-should-i-do-anything-at-this-point'></a>7. I think I've completed writing the code for a ticket, now I'm testing it on my local development environment. Should I do anything at this point?
 
 Yes. Depending on the ticket type change it's **"Status" to "Reviewing" or "Testing"** so others will know about the progress.
 
@@ -99,7 +99,7 @@ Yes. Depending on the ticket type change it's **"Status" to "Reviewing" or "Test
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='8-ok-testing-is-completed-what-is-the-next'></a>**8. OK, testing is completed. What is the next?**
+## <a name='8-ok-testing-is-completed-what-is-the-next'></a>8. OK, testing is completed. What is the next?
 
 When you have tested what you have worked on (changing some codes, updating a library, etc.) and everything seems fine, it's time to deploy these changes. Commit the changes and push them to code repository. Don't forget to add the ticket number to your commit description. Then these are the steps you should take:
 
@@ -112,13 +112,13 @@ When you have tested what you have worked on (changing some codes, updating a li
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='9-when-should-i-change-the-ticket-status-to-needs-approval'></a>**9. When should I change the ticket "Status" to "Needs Approval"?**
+## <a name='9-when-should-i-change-the-ticket-status-to-needs-approval'></a>9. When should I change the ticket "Status" to "Needs Approval"?
 
 Let's say there is a situation which you are not able to work on a ticket because you have to wait for someone else's approval, in this situation you can change the ticket **"Status" to "Needs Approval"** and **reassign the ticket to that person**. You should also add a comment and explain what needs to be approved.
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='10-when-can-i-change-the-ticket-status-to-on-hold'></a>**10. When can I change the ticket "Status" to "On Hold"?**
+## <a name='10-when-can-i-change-the-ticket-status-to-on-hold'></a>10. When can I change the ticket "Status" to "On Hold"?
 
 Let's say there is a situation which you are not able to work on a ticket for a while, in this situation you can change the ticket **"Status" to "On Hold"**. You should also add a comment and explain the reason.
 
@@ -126,31 +126,31 @@ Let's say there is a situation which you are not able to work on a ticket for a 
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='11-for-some-reason-its-not-possible-to-work-on-a-ticket-and-it-should-be-held-for-a-long-time-what-should-i-do-in-this-situation'></a>**11. For some reason it's not possible to work on a ticket and it should be held for a long time. What should I do in this situation?**
+## <a name='11-for-some-reason-its-not-possible-to-work-on-a-ticket-and-it-should-be-held-for-a-long-time-what-should-i-do-in-this-situation'></a>11. For some reason it's not possible to work on a ticket and it should be held for a long time. What should I do in this situation?
 
 The ticket should be sent back to ticket pool. Also you should add a comment to explain the reason. To do that you need to change the ticket **"Assignee" to "No assignee"** and ticket **"Status" to "Postponed"**.
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='12-what-should-i-do-when-something-is-not-going-to-be-fixed'></a>**12. What should i do when something is not going to be fixed?**
+## <a name='12-what-should-i-do-when-something-is-not-going-to-be-fixed'></a>12. What should i do when something is not going to be fixed?
 
 Under some circumstances there is no possibility of fixing the issue or there is a good reason to ignore it. As such, you should change the ticket **"Status" to "Will not fix"** also change the **"Responsible" to your user id** and **assign the ticket to whoever has the responsibility to supervise you**.
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='13-the-source-code-has-been-changed-and-its-ready-to-be-deployed-but-for-a-reason-i-cant-update-the-server-what-should-i-do-in-this-situation'></a>**13. The source code has been changed and it's ready to be deployed but for a reason I can't update the server. What should I do in this situation?**
+## <a name='13-the-source-code-has-been-changed-and-its-ready-to-be-deployed-but-for-a-reason-i-cant-update-the-server-what-should-i-do-in-this-situation'></a>13. The source code has been changed and it's ready to be deployed but for a reason I can't update the server. What should I do in this situation?
 
 If there is a situation which you are not able to deploy the changes or you are not able to update the server, you can change the ticket **"Status" to "Waiting deployment"**.
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='14-is-there-any-way-which-i-can-set-my-upcoming-ticket'></a>**14. Is there any way which I can set my upcoming ticket?**
+## <a name='14-is-there-any-way-which-i-can-set-my-upcoming-ticket'></a>14. Is there any way which I can set my upcoming ticket?
 
 If you like to let other team members know or if you like to remind yourself which ticket will be your next ticket then you can change the ticket **"Status" to "Upcoming"**.
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do'></a>**15. A "Deployed Live" ticket has been assigned to me. What should I do?**
+## <a name='15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do'></a>15. A "Deployed Live" ticket has been assigned to me. What should I do?
 
 It means you supervise someone else in your team, so you have the responsibility to check the changes and make sure everything is in correct working order, if so you can change ticket **"Status" to "Resolved"** and **assign the ticket to whoever has the responsibility to supervise you**.
 
@@ -158,7 +158,7 @@ It means you supervise someone else in your team, so you have the responsibility
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='16-when-should-i-change-the-ticket-status-to-needs-work'></a>**16. When should I change the ticket "Status" to "Needs work"?**
+## <a name='16-when-should-i-change-the-ticket-status-to-needs-work'></a>16. When should I change the ticket "Status" to "Needs work"?
 
 You should only do this if you have responsibility to supervise someone and you find something wrong in a ticket that has been assigned to you. In this situation, you should change the ticket **"Status" to "Needs work"** and **reassign it back to the corresponding developer**.
 
@@ -166,13 +166,13 @@ You should only do this if you have responsibility to supervise someone and you 
 
 [Back](#tickets-workflow-in-cit-projects)
 
-##<a name='17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do'></a>**17. A ticket with "Status" of "Needs Approval" has been assigned to me. What should I do?**
+## <a name='17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do'></a>17. A ticket with "Status" of "Needs Approval" has been assigned to me. What should I do?
 
 It means someone needs your approval for what has been done on a ticket. See comments on the ticket for more information and decide whether or not you approve it. Add your comment to the ticket and **reassign it to the person** who previously has assigned it to you.
 
 [Back](#tickets-workflow-in-cit-projects)
 
-#<a name='ticket-workflow-diagram'></a>**Ticket workflow diagram**
+# <a name='ticket-workflow-diagram'></a>Ticket workflow diagram
 
 The below diagram shows the ticket "Status" states.
 
