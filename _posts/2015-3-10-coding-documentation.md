@@ -115,3 +115,12 @@ else
 }
 {% endhighlight %}
 
+**4. Name property in submit button**
+
+Using `name="something"` in a submit button will make bugs when using javascript to disable the button on submit.
+
+So do not write html code like this:
+
+```
+<button type="submit" name="action" value="remove">submit</button>
+```
