@@ -1,8 +1,8 @@
 ---
-title: CIT Coding Documentation
+title: Coding Best Practices
 layout: page
 ---
-**CIT Coding Documentation**
+**Coding Best Practices**
 
 This document explains the best practices when writing code for any project in CIT. please note that all of the code samples are written based on Laravel php framework because that's what we use for most of the projects in CIT, but they are applicable on any other framework too.
 

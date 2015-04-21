@@ -1,5 +1,5 @@
 ---
-title: Tickets Workflow Documentation
+title: Tickets Workflow
 layout: page
 ---
 # <a name='tickets-workflow-in-cit-projects'></a>Tickets workflow in CIT projects
