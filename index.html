@@ -5,14 +5,13 @@ layout: default
 <div class="home">
 
   <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
+    <div class="post">
+      {% for post in site.posts reversed %}
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-		  <h3 class="h2 post-title">{{ post.date | date: "%-d" }} {{ post.title }}</h3>
+		  <h3 class="h3 post-title">{{ post.date | date: "%-d" }}. {{ post.title }}</h3>
         </a>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 
-  {% include pagination.html %}
 </div>
