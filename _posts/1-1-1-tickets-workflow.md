@@ -7,25 +7,26 @@ layout: page
 This document explains the "ticket life cycle" and discusses how a developer should choose a ticket, how to work on it, and also when and why any fields of the ticket should be changed.
 
 ### Table of Contents
-[1. When and how should I raise a new ticket?](#1-when-and-how-should-i-raise-a-new-ticket)
-[2. There is no ticket assigned to me. What should I do?](#2-there-is-no-ticket-assigned-to-me-what-should-i-do)
-[3. What does ticket pool mean?](#3-what-does-ticket-pool-mean)
-[4. There are some tickets assigned to me, does it matter which one I choose to work on?](#4-there-are-some-tickets-assigned-to-me-does-it-matter-which-one-i-choose-to-work-on)
-[5. What should I do when there is something urgent?](#5-what-should-i-do-when-there-is-something-urgent)
-[6. What should I do when I start working on a ticket?](#6-what-should-i-do-when-i-start-working-on-a-ticket)
-[7. I think I’ve completed writing the code for a ticket, now I’m testing it on my local development environment. Should I do anything at this point?](#7-i-think-ive-completed-writing-the-code-for-a-ticket-now-im-testing-it-on-my-local-development-environment-should-i-do-anything-at-this-point)
-[8. OK, testing is completed. What is the next?](#8-ok-testing-is-completed-what-is-the-next)
-[9. When should I change the ticket “Status” to “Needs Approval”?](#9-when-should-i-change-the-ticket-status-to-needs-approval)
-[10. When can I change the ticket “Status” to “On Hold”?](#10-when-can-i-change-the-ticket-status-to-on-hold)
-[11. For some reason it’s not possible to work on a ticket and it should be held for a long time. What should I do in this situation?](#11-for-some-reason-its-not-possible-to-work-on-a-ticket-and-it-should-be-held-for-a-long-time-what-should-i-do-in-this-situation)
-[12. What should i do when something is not going to be fixed?](#12-what-should-i-do-when-something-is-not-going-to-be-fixed)
-[13. The source code has been changed and it’s ready to be deployed but for a reason I can’t update the server. What should I do in this situation?](#13-the-source-code-has-been-changed-and-its-ready-to-be-deployed-but-for-a-reason-i-cant-update-the-server-what-should-i-do-in-this-situation)
-[14. Is there any way which I can set my upcoming ticket?](#14-is-there-any-way-which-i-can-set-my-upcoming-ticket)
-[15. A “Deployed Live” ticket has been assigned to me. What should I do?](#15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do)
-[16. When should I change the ticket “Status” to “Needs work”?](#16-when-should-i-change-the-ticket-status-to-needs-work)
-[17. A ticket with “Status” of “Needs Approval” has been assigned to me. What should I do?](#17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do)
+[1. When and how should I raise a new ticket?](#1-when-and-how-should-i-raise-a-new-ticket)  
+[2. There is no ticket assigned to me. What should I do?](#2-there-is-no-ticket-assigned-to-me-what-should-i-do)  
+[3. What does ticket pool mean?](#3-what-does-ticket-pool-mean)  
+[4. There are some tickets assigned to me, does it matter which one I choose to work on?](#4-there-are-some-tickets-assigned-to-me-does-it-matter-which-one-i-choose-to-work-on)  
+[5. What should I do when there is something urgent?](#5-what-should-i-do-when-there-is-something-urgent)  
+[6. What should I do when I start working on a ticket?](#6-what-should-i-do-when-i-start-working-on-a-ticket)  
+[7. I think I’ve completed writing the code for a ticket, now I’m testing it on my local development environment. Should I do anything at this point?](#7-i-think-ive-completed-writing-the-code-for-a-ticket-now-im-testing-it-on-my-local-development-environment-should-i-do-anything-at-this-point)  
+[8. OK, testing is completed. What is the next?](#8-ok-testing-is-completed-what-is-the-next)  
+[9. When should I change the ticket “Status” to “Needs Approval”?](#9-when-should-i-change-the-ticket-status-to-needs-approval)  
+[10. When can I change the ticket “Status” to “On Hold”?](#10-when-can-i-change-the-ticket-status-to-on-hold)  
+[11. For some reason it’s not possible to work on a ticket and it should be held for a long time. What should I do in this situation?](#11-for-some-reason-its-not-possible-to-work-on-a-ticket-and-it-should-be-held-for-a-long-time-what-should-i-do-in-this-situation)  
+[12. What should i do when something is not going to be fixed?](#12-what-should-i-do-when-something-is-not-going-to-be-fixed)  
+[13. The source code has been changed and it’s ready to be deployed but for a reason I can’t update the server. What should I do in this situation?](#13-the-source-code-has-been-changed-and-its-ready-to-be-deployed-but-for-a-reason-i-cant-update-the-server-what-should-i-do-in-this-situation)  
+[14. Is there any way which I can set my upcoming ticket?](#14-is-there-any-way-which-i-can-set-my-upcoming-ticket)  
+[15. A “Deployed Live” ticket has been assigned to me. What should I do?](#15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do)  
+[16. When should I change the ticket “Status” to “Needs work”?](#16-when-should-i-change-the-ticket-status-to-needs-work)  
+[17. A ticket with “Status” of “Needs Approval” has been assigned to me. What should I do?](#17-a-ticket-with-status-of-needs-approval-has-been-assigned-to-me-what-should-i-do)  
 
-[Ticket Workflow Diagram](#ticket-workflow-diagram)
+#### Appendices
+[A. Ticket Workflow Diagram](#ticket-workflow-diagram)
 
 ## <a name='1-when-and-how-should-i-raise-a-new-ticket'></a>1. When and how should I raise a new ticket?
 

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="posts">
+    <div class="post">
+      {% for post in site.posts reversed %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+		  <h3 class="h3 post-title">{{ post.date | date: "%-d" }}. {{ post.title }}</h3>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
