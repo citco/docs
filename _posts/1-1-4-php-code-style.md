@@ -2,7 +2,9 @@
 title: PHP Code Style
 layout: page
 ---
-{% highlight php}
+This document describes PHP code style we intend to adopt in all CIT projects.
+
+{% highlight php %}
 <?php namespace Vendor\Package;
 
 use FooInterface;
@@ -256,4 +258,4 @@ class Foo extends Bar implements FooInterface {
 	// it's good practice to have a blank line before class ending brace
 
 }
-{% endhighligh %}
+{% endhighlight %}
