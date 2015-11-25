@@ -18,7 +18,7 @@ This document explains the "ticket life cycle" and discusses how a developer sho
 [9. When should I change the ticket “Status” to “Needs Approval”?](#9-when-should-i-change-the-ticket-status-to-needs-approval)  
 [10. When can I change the ticket “Status” to “On Hold”?](#10-when-can-i-change-the-ticket-status-to-on-hold)  
 [11. For some reason it’s not possible to work on a ticket and it should be held for a long time. What should I do in this situation?](#11-for-some-reason-its-not-possible-to-work-on-a-ticket-and-it-should-be-held-for-a-long-time-what-should-i-do-in-this-situation)  
-[12. What should i do when something is not going to be fixed?](#12-what-should-i-do-when-something-is-not-going-to-be-fixed)  
+[12. What should I do when something is not going to be fixed?](#12-what-should-i-do-when-something-is-not-going-to-be-fixed)  
 [13. The source code has been changed and it’s ready to be deployed but for a reason I can’t update the server. What should I do in this situation?](#13-the-source-code-has-been-changed-and-its-ready-to-be-deployed-but-for-a-reason-i-cant-update-the-server-what-should-i-do-in-this-situation)  
 [14. Is there any way which I can set my upcoming ticket?](#14-is-there-any-way-which-i-can-set-my-upcoming-ticket)  
 [15. A “Deployed Live” ticket has been assigned to me. What should I do?](#15-a-deployed-live-ticket-has-been-assigned-to-me-what-should-i-do)  
@@ -134,7 +134,7 @@ The ticket should be sent back to ticket pool. Also you should add a comment to 
 
 [Back](#tickets-workflow-in-cit-projects)
 
-## <a name='12-what-should-i-do-when-something-is-not-going-to-be-fixed'></a>12. What should i do when something is not going to be fixed?
+## <a name='12-what-should-i-do-when-something-is-not-going-to-be-fixed'></a>12. What should I do when something is not going to be fixed?
 
 Under some circumstances there is no possibility of fixing the issue or there is a good reason to ignore it. As such, you should change the ticket **"Status" to "Will not fix"** also change the **"Responsible" to your user id** and **assign the ticket to whoever has the responsibility to supervise you**.
 
